@@ -41,7 +41,10 @@ trait ContactFormTrait
 
         $form->setFormAction($this->getFormSubmissionLink());
         $form->setAttribute('hx-post', $this->getFormSubmissionLink());
-        $form->enableSpamProtection();
+        // enableSpamProtection() is provided by silverstripe/spamprotection; only call it when present
+        if ($form->hasMethod('enableSpamProtection')) {
+            $form->enableSpamProtection();
+        }
 
         $this->extend('updateContactForm', $form);
 
