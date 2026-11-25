@@ -1,0 +1,22 @@
+nl:
+  SilverStripe\Core\Validation\FieldValidation\EmailFieldValidator:
+    INVALID: 'Vul een geldig e-mailadres in.'
+  ContactController:
+    ContactFormSendContactRequest: 'Bericht verzenden'
+    SendError: 'Je bericht kon niet worden verzonden. Probeer het later opnieuw.'
+  ContactElement:
+    SuccessMessage: 'Bedankt. Je bericht is verzonden.'
+  ContactEmail:
+    ContactRequestFrom: 'Contactverzoek van'
+    Phone: Telefoon
+  ContactRequest:
+    EmailSubject: 'Contactverzoek van {firstname} {surname}'
+    db_FirstName: 'Voornaam'
+    db_Surname: 'Achternaam'
+    db_Email: 'E-mailadres'
+    db_Phone: 'Telefoon'
+    db_Message: 'Bericht'
+  ContactSiteConfig:
+    ContactTabTitle: 'Contactformulier'
+    ContactFormRecipientAddressDescription: 'Ontvangeradres. Gebruikt {email} als dit leeg blijft.'
+    ContactFormSenderAddressDescription: 'Afzenderadres. Gebruikt {email} als dit leeg blijft.'

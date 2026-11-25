@@ -1,0 +1,9 @@
+---
+Name: contact-extensions
+---
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    contactform: Netwerkstatt\Contact\Extension\SiteConfig
+  translate:
+    - ContactFormSuccessMessage

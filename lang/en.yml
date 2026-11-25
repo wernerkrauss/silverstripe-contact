@@ -1,0 +1,22 @@
+en:
+  SilverStripe\Core\Validation\FieldValidation\EmailFieldValidator:
+    INVALID: 'Please enter a valid email address.'
+  ContactController:
+    ContactFormSendContactRequest: 'Send message'
+    SendError: 'Sorry, your message could not be sent. Please try again later.'
+  ContactElement:
+    SuccessMessage: 'Thank you. Your message has been sent.'
+  ContactEmail:
+    ContactRequestFrom: 'Contact form request from'
+    Phone: Phone
+  ContactRequest:
+    EmailSubject: 'Contact request from {firstname} {surname}'
+    db_FirstName: 'First name'
+    db_Surname: 'Last name'
+    db_Email: 'Email address'
+    db_Phone: 'Phone'
+    db_Message: 'Message'
+  ContactSiteConfig:
+    ContactTabTitle: 'Contact form'
+    ContactFormRecipientAddressDescription: 'Recipient address. Uses {email} if left blank.'
+    ContactFormSenderAddressDescription: 'Sender address. Uses {email} if left blank.'

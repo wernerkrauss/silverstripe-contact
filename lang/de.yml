@@ -1,0 +1,55 @@
+de:
+  SilverStripe\Core\Validation\FieldValidation\EmailFieldValidator:
+    INVALID: 'Bitte gib eine gültige E-Mail-Adresse ein.'
+  ContactController:
+    ContactFormSendContactRequest: 'Nachricht senden'
+    SendError: 'Deine Nachricht konnte leider nicht gesendet werden. Bitte versuche es später erneut.'
+  ContactElement:
+    SuccessMessage: 'Danke. Deine Nachricht wurde gesendet.'
+  ContactEmail:
+    ContactRequestFrom: 'Kontaktanfrage von'
+    Phone: Telefon
+  ContactRequest:
+    EmailSubject: 'Kontaktanfrage von {firstname} {surname}'
+    db_FirstName: 'Vorname'
+    db_Surname: 'Nachname'
+    db_Email: 'E-Mail-Adresse'
+    db_Phone: 'Telefon'
+    db_Message: 'Nachricht'
+  ContactSiteConfig:
+    ContactTabTitle: 'Kontaktformular'
+    ContactFormRecipientAddressDescription: 'Empfängeradresse. Wenn leer: {email}'
+    ContactFormSenderAddressDescription: 'Absenderadresse. Wenn leer: {email}'
+  Netwerkstatt\Contact\Admin\ContactAdmin:
+    MENUTITLE: Kontaktanfragen
+  Netwerkstatt\Contact\Element\Contact:
+    PLURALNAME: Kontaktformulare
+    PLURALS:
+      one: 'Ein Kontaktformular'
+      other: '{count} Kontaktformulare'
+    SINGULARNAME: Kontaktformular
+  Netwerkstatt\Contact\Extension\SiteConfig:
+    ContactFormRecipientAddressDescription: 'Empfängeradresse. Wenn leer: {email}'
+    ContactFormSenderAddressDescription: 'Absenderadresse. Wenn leer: {email}'
+    ContactTabTitle: Kontaktformular
+    db_ContactFormRecipientAddress: 'Empfängeradresse Kontaktformular'
+    db_ContactFormSenderAddress: 'Absenderadresse Kontaktformular'
+    db_ContactFormSuccessMessage: 'Contact form success message'
+  Netwerkstatt\Contact\Model\ContactRequest:
+    EmailSubject: 'Kontaktanfrage von {firstname} {surname}'
+    PLURALNAME: Kontaktanfragen
+    PLURALS:
+      one: 'Eine Kontaktanfrage'
+      other: '{count} Kontaktanfragen'
+    SINGULARNAME: 'Contact Request'
+    db_Email: E-Mail
+    db_FirstName: Vorname
+    db_Message: Nachricht
+    db_Phone: Telefon
+    db_Surname: Nachname
+    has_one_ContactTravelType: 'Anreise mit'
+  SilverStripe\SiteConfig\SiteConfig:
+    db_ContactFormRecipientAddress: 'E-Mail-Adresse für Kontaktformular'
+    db_ContactFormSenderAddress: 'E-Mail-Adresse des Absenders'
+    db_ContactFormSuccessMessage: 'Erfolgsmeldung des Kontaktformulars'
+    db_ContactFormTitle: 'Titel des Kontaktformulars'

@@ -1,0 +1,22 @@
+es:
+  SilverStripe\Core\Validation\FieldValidation\EmailFieldValidator:
+    INVALID: 'Introduce una dirección de correo electrónico válida.'
+  ContactController:
+    ContactFormSendContactRequest: 'Enviar mensaje'
+    SendError: 'No se pudo enviar el mensaje. Inténtalo de nuevo más tarde.'
+  ContactElement:
+    SuccessMessage: 'Gracias. Tu mensaje ha sido enviado.'
+  ContactEmail:
+    ContactRequestFrom: 'Solicitud de contacto de'
+    Phone: Teléfono
+  ContactRequest:
+    EmailSubject: 'Solicitud de contacto de {firstname} {surname}'
+    db_FirstName: 'Nombre'
+    db_Surname: 'Apellido'
+    db_Email: 'Correo electrónico'
+    db_Phone: 'Teléfono'
+    db_Message: 'Mensaje'
+  ContactSiteConfig:
+    ContactTabTitle: 'Formulario de contacto'
+    ContactFormRecipientAddressDescription: 'Dirección del destinatario. Si se deja vacío, se usa {email}.'
+    ContactFormSenderAddressDescription: 'Dirección del remitente. Si se deja vacío, se usa {email}.'
