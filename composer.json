@@ -11,6 +11,9 @@
         "dnadesign/silverstripe-elemental": "^5 || ^6",
         "silverstripe/spamprotection": "^4 || ^5"
     },
+    "suggest": {
+        "innoweb/silverstripe-spamprotection-honeypot": "Honeypot spam protector (SS6: ^3) — set as default_spam_protector to activate enableSpamProtection() on the contact form."
+    },
     "autoload": {
         "psr-4": {
             "Netwerkstatt\\Contact\\": "src/"

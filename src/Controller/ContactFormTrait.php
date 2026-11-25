@@ -12,6 +12,7 @@ use SilverStripe\Forms\FormAction;
 use SilverStripe\Forms\Validation\RequiredFieldsValidator;
 use Psr\Log\LoggerInterface;
 use SilverStripe\Core\Injector\Injector;
+use SilverStripe\SpamProtection\Extension\FormSpamProtectionExtension;
 
 trait ContactFormTrait
 {
@@ -41,8 +42,13 @@ trait ContactFormTrait
 
         $form->setFormAction($this->getFormSubmissionLink());
         $form->setAttribute('hx-post', $this->getFormSubmissionLink());
-        // enableSpamProtection() is provided by silverstripe/spamprotection; only call it when present
-        if ($form->hasMethod('enableSpamProtection')) {
+        // enableSpamProtection() is provided by silverstripe/spamprotection and only works when a
+        // spam protector is configured (e.g. innoweb/silverstripe-spamprotection-honeypot).
+        // Call it only when both the method and a protector are available.
+        if ($form->hasMethod('enableSpamProtection')
+            && class_exists(FormSpamProtectionExtension::class)
+            && FormSpamProtectionExtension::get_protector() !== null
+        ) {
             $form->enableSpamProtection();
         }
 
