@@ -18,6 +18,12 @@
             "Netwerkstatt\\Contact\\": "src/"
         }
     },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
