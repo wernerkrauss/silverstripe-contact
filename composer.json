@@ -1,6 +1,5 @@
 {
     "name": "wernerkrauss/silverstripe-contact",
-    "version": "1.0.0",
     "description": "Simple contact module for Silverstripe CMS",
     "type": "silverstripe-vendormodule",
     "license": "MIT",
@@ -23,7 +22,7 @@
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
-            "dev-main": "1.0.x-dev"
+            "dev-main": "0.1.x-dev"
         }
     }
 }
