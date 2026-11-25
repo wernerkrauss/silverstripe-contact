@@ -24,6 +24,7 @@
         }
     },
     "require-dev": {
+        "silverstripe/recipe-testing": "^4",
         "phpunit/phpunit": "^11.3"
     },
     "config": {
