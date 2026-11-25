@@ -18,6 +18,15 @@
             "Netwerkstatt\\Contact\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Netwerkstatt\\Contact\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "silverstripe/recipe-testing": "^4",
+        "phpunit/phpunit": "^11.3"
+    },
     "config": {
         "allow-plugins": {
             "composer/installers": true,
