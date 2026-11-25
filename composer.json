@@ -4,11 +4,11 @@
     "type": "silverstripe-vendormodule",
     "license": "MIT",
     "require": {
-        "silverstripe/framework": "^5 || ^6",
-        "silverstripe/cms": "^5 || ^6",
+        "silverstripe/framework": "^6",
+        "silverstripe/cms": "^6",
         "silverstripe/htmleditor-tinymce": "^1",
-        "dnadesign/silverstripe-elemental": "^5 || ^6",
-        "silverstripe/spamprotection": "^4 || ^5"
+        "dnadesign/silverstripe-elemental": "^6",
+        "silverstripe/spamprotection": "^5"
     },
     "suggest": {
         "innoweb/silverstripe-spamprotection-honeypot": "Honeypot spam protector (SS6: ^3) — set as default_spam_protector to activate enableSpamProtection() on the contact form."
